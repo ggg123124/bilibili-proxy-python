@@ -1,5 +1,6 @@
-# 使用阿里云的 Python 3.11 镜像作为基础镜像
-FROM registry.cn-hangzhou.aliyuncs.com/library/python:3.11-slim
+# 使用 Python 3.11 官方镜像作为基础镜像
+# 阿里云构建会自动使用镜像加速
+FROM python:3.11-slim
 
 # 设置工作目录
 WORKDIR /app
